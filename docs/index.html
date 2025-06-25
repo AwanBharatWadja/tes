@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NaufalNyaa SportEase - Booking Tempat Olahraga Terbaik</title>
+    <meta name="description" content="Platform booking tempat olahraga terbaik dengan fasilitas modern dan harga terjangkau. Futsal, Basket, Renang, Gym dan lebih banyak lagi!">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar-utama" id="navbar">
+        <div class="container-navbar">
+            <div class="logo">
+                <h2><span class="nama-utama">NaufalNyaa</span> <span class="nama-brand">SportEase</span></h2>
+            </div>
+            <ul class="menu-navigasi">
+                <li><a href="index.html" class="aktif">Beranda</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="author.html">Pembuat</a></li>
+                <li><a href="https://wa.me/6289533736447?text=Halo%20saya%20ingin%20bertanya%20tentang%20SportEase" target="_blank">Hubungi</a></li>
+                <li><a href="login.html" class="tombol-login-member">Join VIP</a></li>
+            </ul>
+            <div class="hamburger-menu" id="hamburgerMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bagian-hero">
+        <div class="container-hero">
+            <div class="konten-hero">
+                <h1>Booking Tempat <span class="highlight">Olahraga</span> Jadi Lebih Mudah</h1>
+                <p>Nikmati pengalaman berolahraga terbaik dengan fasilitas lengkap dan modern. Platform booking online yang mudah, cepat, dan terpercaya untuk semua kebutuhan olahraga Anda.</p>
+                <div class="tombol-hero">
+                    <a href="booking.html" class="tombol-primer">
+                        🏃‍♂️ Booking Sekarang
+                    </a>
+                    <a href="fasilitas.html" class="tombol-sekunder">
+                        👀 Lihat Fasilitas
+                    </a>
+                </div>
+            </div>
+            <div class="gambar-hero">
+                <img src="assets/gambar/utama.png" alt="Fasilitas Olahraga Modern SportEase">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bagian-stats">
+        <div class="container-stats">
+            <div class="grid-stats">
+                <div class="item-stats">
+                    <h3>500+</h3>
+                    <p>Member Aktif</p>
+                </div>
+                <div class="item-stats">
+                    <h3>6</h3>
+                    <p>Jenis Olahraga</p>
+                </div>
+                <div class="item-stats">
+                    <h3>24/7</h3>
+                    <p>Layanan Online</p>
+                </div>
+                <div class="item-stats">
+                    <h3>98%</h3>
+                    <p>Kepuasan Pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mengapa Pilih Kami -->
+    <section class="bagian-mengapa">
+        <div class="container-mengapa">
+            <h2>Mengapa Pilih NaufalNyaa SportEase?</h2>
+            <p class="subtitle">Kami berkomitmen memberikan pengalaman olahraga terbaik dengan fasilitas modern dan pelayanan prima</p>
+            <div class="grid-keunggulan">
+                <div class="kartu-keunggulan">
+                    <div class="ikon-keunggulan">🏆</div>
+                    <h3>Fasilitas Premium</h3>
+                    <p>Dilengkapi dengan peralatan dan fasilitas olahraga terkini dengan standar internasional untuk pengalaman terbaik</p>
+                </div>
+                <div class="kartu-keunggulan">
+                    <div class="ikon-keunggulan">⚡</div>
+                    <h3>Booking Instan</h3>
+                    <p>Sistem booking online yang mudah dan cepat, bisa diakses kapan saja dengan konfirmasi real-time</p>
+                </div>
+                <div class="kartu-keunggulan">
+                    <div class="ikon-keunggulan">💰</div>
+                    <h3>Harga Terjangkau</h3>
+                    <p>Harga yang kompetitif dengan kualitas fasilitas premium, plus berbagai paket member yang menguntungkan</p>
+                </div>
+                <div class="kartu-keunggulan">
+                    <div class="ikon-keunggulan">🔒</div>
+                    <h3>Aman & Nyaman</h3>
+                    <p>Lingkungan yang aman dan nyaman dengan sistem keamanan 24 jam untuk semua aktivitas olahraga</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Olahraga Populer -->
+    <section class="bagian-olahraga">
+        <div class="container-olahraga">
+            <h2>Olahraga Populer</h2>
+            <p class="subtitle">Pilihan olahraga favorit dengan fasilitas terlengkap dan kualitas terbaik</p>
+            <div class="grid-olahraga">
+                <div class="kartu-olahraga">
+                    <div class="gambar-container">
+                        <img src="assets/gambar/futsal.png" alt="Lapangan Futsal Premium">
+                        <div class="overlay">
+                            <div class="overlay-text">Lapangan Indoor Premium<br>Rp 80.000/jam</div>
+                        </div>
+                    </div>
+                    <div class="konten">
+                        <h3>Futsal</h3>
+                        <p>Lapangan futsal indoor dengan rumput sintetis berkualitas tinggi, pencahayaan LED optimal, dan sistem ventilasi terbaik</p>
+                    </div>
+                </div>
+                <div class="kartu-olahraga">
+                    <div class="gambar-container">
+                        <img src="assets/gambar/basket.png" alt="Lapangan Basket Standar Internasional">
+                        <div class="overlay">
+                            <div class="overlay-text">Standar Internasional<br>Rp 60.000/jam</div>
+                        </div>
+                    </div>
+                    <div class="konten">
+                        <h3>Basketball</h3>
+                        <p>Lapangan basket standar internasional dengan lantai parket berkualitas, ring adjustable, dan pencahayaan optimal</p>
+                    </div>
+                </div>
+                <div class="kartu-olahraga">
+                    <div class="gambar-container">
+                        <img src="assets/gambar/kolam renang.png" alt="Kolam Renang Bersih">
+                        <div class="overlay">
+                            <div class="overlay-text">Air Jernih & Bersih<br>Rp 25.000/jam</div>
+                        </div>
+                    </div>
+                    <div class="konten">
+                        <h3>Swimming</h3>
+                        <p>Kolam renang dengan air jernih, sistem filtrasi modern, berbagai kedalaman untuk semua umur dan tingkat kemampuan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="bagian-testimoni">
+        <div class="container-testimoni">
+            <h2>Apa Kata Mereka?</h2>
+            <p class="subtitle">Testimoni dari para member setia yang telah merasakan pengalaman terbaik bersama kami</p>
+            <div class="grid-testimoni">
+                <div class="kartu-testimoni">
+                    <p>Fasilitas yang sangat baik dan pelayanan yang memuaskan. Lapangan futsal-nya berkualitas internasional, pasti akan kembali lagi dan merekomendasikan ke teman-teman!</p>
+                    <div class="profil-testimoni">
+                        <div class="avatar">R</div>
+                        <div class="info">
+                            <h4>Revan Sabilillah</h4>
+                            <p>Atlit Futsal Internasional</p>
+                            <span>Member Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-testimoni">
+                    <p>Booking online-nya mudah banget, dan tempatnya bersih. Kolam renangnya selalu jernih dan fasilitas pendukungnya lengkap. Recommended banget!</p>
+                    <div class="profil-testimoni">
+                        <div class="avatar">S</div>
+                        <div class="info">
+                            <h4>Safira Azzahra</h4>
+                            <p>Mahasiswa Fakultas Sains</p>
+                            <span>Member Reguler</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="kartu-testimoni">
+                    <p>Harga terjangkau dengan fasilitas yang lengkap. Gym-nya modern, peralatan lengkap, dan instrukturnya profesional. Worth it banget!</p>
+                    <div class="profil-testimoni">
+                        <div class="avatar">R</div>
+                        <div class="info">
+                            <h4>Rio Gunawan</h4>
+                            <p>CEO PT.Sukawana Gacor</p>
+                            <span>Member VIP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bagian-cta">
+        <div class="container-cta">
+            <h2>Siap Memulai Olahraga Hari Ini?</h2>
+            <p>Bergabunglah dengan ribuan member yang telah merasakan pengalaman olahraga terbaik bersama kami. Booking sekarang dan dapatkan diskon khusus!</p>
+            <a href="booking.html" class="tombol-cta">
+                🚀 Mulai Booking Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-utama">
+        <div class="container-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NaufalNyaa SportEase</h3>
+                    <p>Platform booking tempat olahraga terbaik dengan fasilitas modern dan pelayanan prima untuk semua kebutuhan olahraga Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="booking.html">Booking Online</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="login.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="https://wa.me/6289533736447" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:info@sportease.com">Email</a></li>
+                        <li><a href="author.html">Tentang Pembuat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Minggu<br>06:00 - 23:00 WIB</p>
+                    <p>Booking Online 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Created with <span class="highlight">💖</span> by <span class="highlight">NaufalNyaa</span> | © 2024 SportEase. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

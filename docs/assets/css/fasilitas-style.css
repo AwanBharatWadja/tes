@@ -1,0 +1,199 @@
+/* Header Fasilitas */
+.header-fasilitas {
+    padding: 120px 0 60px;
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 100%);
+    text-align: center;
+}
+
+.container-header-fasilitas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-fasilitas h1 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.header-fasilitas p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Bagian Fasilitas */
+.bagian-fasilitas {
+    padding: 80px 0;
+    background: #f8f9fa;
+}
+
+.container-fasilitas {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-fasilitas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+}
+
+.kartu-fasilitas {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.kartu-fasilitas:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(135, 206, 235, 0.3);
+}
+
+.gambar-fasilitas {
+    overflow: hidden;
+    height: 220px;
+}
+
+.gambar-fasilitas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.kartu-fasilitas:hover .gambar-fasilitas img {
+    transform: scale(1.05);
+}
+
+.konten-fasilitas {
+    padding: 30px;
+}
+
+.konten-fasilitas h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.konten-fasilitas p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.detail-fasilitas {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.detail-fasilitas li {
+    color: #555;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    padding-left: 5px;
+}
+
+/* Fasilitas Tambahan */
+.bagian-fasilitas-tambahan {
+    padding: 80px 0;
+    background: white;
+}
+
+.container-fasilitas-tambahan {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-fasilitas-tambahan h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.grid-fasilitas-tambahan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.item-fasilitas-tambahan {
+    background: #f8f9fa;
+    padding: 40px 30px;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.item-fasilitas-tambahan:hover {
+    border-color: #87CEEB;
+    background: white;
+    box-shadow: 0 10px 30px rgba(135, 206, 235, 0.2);
+    transform: translateY(-10px);
+}
+
+.ikon-fasilitas {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.item-fasilitas-tambahan h3 {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.item-fasilitas-tambahan p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Animasi */
+.kartu-fasilitas {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.kartu-fasilitas:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.kartu-fasilitas:nth-child(3n) {
+    animation-delay: 0.4s;
+}
+
+.item-fasilitas-tambahan {
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+.item-fasilitas-tambahan:nth-child(2n) {
+    animation-delay: 0.1s;
+}
+
+.item-fasilitas-tambahan:nth-child(3n) {
+    animation-delay: 0.2s;
+}
+
+.item-fasilitas-tambahan:nth-child(4n) {
+    animation-delay: 0.3s;
+}
+
+.item-fasilitas-tambahan:nth-child(5n) {
+    animation-delay: 0.4s;
+}
+
+.item-fasilitas-tambahan:nth-child(6n) {
+    animation-delay: 0.5s;
+}

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Member - NaufalNyaa SportEase</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/login-style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-utama">
+        <div class="container-navbar">
+            <div class="logo">
+                <h2><span class="nama-utama">NaufalNyaa</span> <span class="nama-brand">SportEase</span></h2>
+            </div>
+            <ul class="menu-navigasi">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="fasilitas.html">Fasilitas</a></li>
+                <li><a href="author.html">Pembuat</a></li>
+                <li><a href="https://wa.me/6289533736447?text=Halo%20saya%20ingin%20bertanya%20tentang%20membership" target="_blank">Hubungi</a></li>
+                <li><a href="login.html" class="aktif tombol-login-member">Join VIP</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Login -->
+    <section class="bagian-login">
+        <div class="container-login">
+            <div class="kotak-login">
+                <div class="bagian-kiri">
+                    <div class="konten-kiri">
+                        <h2>Selamat Datang Kembali!</h2>
+                        <p>Login untuk mengakses akun member Anda dan nikmati berbagai keuntungan eksklusif.</p>
+                        <div class="keuntungan-member">
+                            <div class="item-keuntungan">
+                                <span class="ikon">🎯</span>
+                                <span>Booking prioritas</span>
+                            </div>
+                            <div class="item-keuntungan">
+                                <span class="ikon">💰</span>
+                                <span>Diskon khusus member</span>
+                            </div>
+                            <div class="item-keuntungan">
+                                <span class="ikon">📱</span>
+                                <span>Notifikasi booking</span>
+                            </div>
+                            <div class="item-keuntungan">
+                                <span class="ikon">🏆</span>
+                                <span>Reward poin</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bagian-kanan">
+                    <div class="form-login">
+                        <h3>Login Member</h3>
+                        <form class="formulir-login" id="form-login">
+                            <div class="grup-input">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Masukkan email Anda" required>
+                            </div>
+
+                            <div class="grup-input">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="Masukkan password Anda" required>
+                            </div>
+
+                            <div class="opsi-login">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="ingat-saya">
+                                    <span class="checkmark"></span>
+                                    Ingat saya
+                                </label>
+                                <a href="#" class="lupa-password">Lupa password?</a>
+                            </div>
+
+                            <button type="submit" class="tombol-login">Masuk</button>
+                        </form>
+
+                        <div class="atau-divider">
+                            <span>atau</span>
+                        </div>
+
+                        <div class="login-sosial">
+                            <button class="tombol-google">
+                                <span class="ikon-google">G</span>
+                                Masuk dengan Google
+                            </button>
+                            <button class="tombol-facebook">
+                                <span class="ikon-facebook">f</span>
+                                Masuk dengan Facebook
+                            </button>
+                        </div>
+
+                        <div class="link-daftar">
+                            <p>Belum punya akun? <a href="#" class="link-registrasi">Daftar sekarang</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Jenis Member -->
+    <section class="bagian-jenis-member">
+        <div class="container-jenis-member">
+            <h2>Jenis Keanggotaan</h2>
+            <div class="grid-member">
+                <div class="kartu-member">
+                    <div class="header-kartu">
+                        <h3>Member Reguler</h3>
+                        <div class="harga-member">Gratis</div>
+                    </div>
+                    <ul class="fitur-member">
+                        <li>✓ Booking online</li>
+                        <li>✓ Diskon 5%</li>
+                        <li>✓ Notifikasi promo</li>
+                        <li>✓ History booking</li>
+                    </ul>
+                    <button class="tombol-pilih-member">Pilih Paket</button>
+                </div>
+
+                <div class="kartu-member featured">
+                    <div class="label-populer">Populer</div>
+                    <div class="header-kartu">
+                        <h3>Member Premium</h3>
+                        <div class="harga-member">Rp 99.000<span>/bulan</span></div>
+                    </div>
+                    <ul class="fitur-member">
+                        <li>✓ Semua fitur Reguler</li>
+                        <li>✓ Diskon 15%</li>
+                        <li>✓ Booking prioritas</li>
+                        <li>✓ Konsultasi gratis</li>
+                        <li>✓ Akses gym 24/7</li>
+                    </ul>
+                    <button class="tombol-pilih-member">Pilih Paket</button>
+                </div>
+
+                <div class="kartu-member">
+                    <div class="header-kartu">
+                        <h3>Member VIP</h3>
+                        <div class="harga-member">Rp 199.000<span>/bulan</span></div>
+                    </div>
+                    <ul class="fitur-member">
+                        <li>✓ Semua fitur Premium</li>
+                        <li>✓ Diskon 25%</li>
+                        <li>✓ Personal trainer</li>
+                        <li>✓ Free towel & loker</li>
+                        <li>✓ Guest pass (2x/bulan)</li>
+                        <li>✓ Parkir VIP</li>
+                    </ul>
+                    <button class="tombol-pilih-member">Pilih Paket</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-utama">
+        <div class="container-footer">
+            <p>Created By 💖 NaufalNyaa</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

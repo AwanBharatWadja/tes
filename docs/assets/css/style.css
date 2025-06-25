@@ -1,0 +1,803 @@
+/* Reset dan Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar-utama {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid rgba(64, 224, 208, 0.2);
+}
+
+.navbar-utama.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    box-shadow: 0 8px 32px rgba(64, 224, 208, 0.1);
+}
+
+.container-navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.logo .nama-utama {
+    color: #40e0d0;
+}
+
+.logo .nama-brand {
+    color: #2c3e50;
+}
+
+.menu-navigasi {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+}
+
+.menu-navigasi li a {
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 50px;
+    position: relative;
+}
+
+.menu-navigasi li a:hover,
+.menu-navigasi li a.aktif {
+    color: #40e0d0;
+    background: rgba(64, 224, 208, 0.1);
+    transform: translateY(-2px);
+}
+
+.tombol-login-member {
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%) !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 50px !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 15px rgba(64, 224, 208, 0.3) !important;
+}
+
+.tombol-login-member:hover {
+    background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%) !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.4) !important;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background: #2c3e50;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Hero Section */
+.bagian-hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.1) 0%, rgba(255, 255, 255, 0.9) 100%);
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.bagian-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="a" cx="50%" cy="50%"><stop offset="0%" stop-color="%2340e0d0" stop-opacity="0.1"/><stop offset="100%" stop-color="%2340e0d0" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23a)"/><circle cx="800" cy="800" r="400" fill="url(%23a)"/></svg>');
+    z-index: -1;
+}
+
+.container-hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.konten-hero h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 24px;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.konten-hero .highlight {
+    color: #40e0d0;
+    position: relative;
+}
+
+.konten-hero p {
+    font-size: 1.3rem;
+    color: #64748b;
+    margin-bottom: 40px;
+    line-height: 1.7;
+    font-weight: 400;
+}
+
+.tombol-hero {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tombol-primer,
+.tombol-sekunder {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tombol-primer {
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    color: white;
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.3);
+}
+
+.tombol-primer:hover {
+    background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(64, 224, 208, 0.4);
+}
+
+.tombol-sekunder {
+    background: transparent;
+    color: #40e0d0;
+    border: 2px solid #40e0d0;
+}
+
+.tombol-sekunder:hover {
+    background: #40e0d0;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.3);
+}
+
+.gambar-hero {
+    position: relative;
+}
+
+.gambar-hero img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 30px;
+    box-shadow: 0 25px 60px rgba(64, 224, 208, 0.2);
+    transition: all 0.3s ease;
+}
+
+.gambar-hero:hover img {
+    transform: translateY(-10px);
+    box-shadow: 0 35px 80px rgba(64, 224, 208, 0.3);
+}
+
+/* Stats Section */
+.bagian-stats {
+    padding: 80px 0;
+    background: white;
+}
+
+.container-stats {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.grid-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    text-align: center;
+}
+
+.item-stats {
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.05) 0%, rgba(255, 255, 255, 0.8) 100%);
+    border: 1px solid rgba(64, 224, 208, 0.1);
+    transition: all 0.3s ease;
+}
+
+.item-stats:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(64, 224, 208, 0.15);
+}
+
+.item-stats h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #40e0d0;
+    margin-bottom: 8px;
+}
+
+.item-stats p {
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Section Mengapa */
+.bagian-mengapa {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.03) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.container-mengapa {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-mengapa h2 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.container-mengapa .subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-keunggulan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.kartu-keunggulan {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(64, 224, 208, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(64, 224, 208, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.kartu-keunggulan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+}
+
+.kartu-keunggulan:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 60px rgba(64, 224, 208, 0.15);
+}
+
+.ikon-keunggulan {
+    font-size: 3.5rem;
+    margin-bottom: 24px;
+    display: block;
+}
+
+.kartu-keunggulan h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    font-weight: 700;
+}
+
+.kartu-keunggulan p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Section Olahraga */
+.bagian-olahraga {
+    padding: 100px 0;
+    background: white;
+}
+
+.container-olahraga {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-olahraga h2 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.container-olahraga .subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-olahraga {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.kartu-olahraga {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 50px rgba(64, 224, 208, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(64, 224, 208, 0.1);
+    position: relative;
+}
+
+.kartu-olahraga:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 80px rgba(64, 224, 208, 0.15);
+}
+
+.kartu-olahraga .gambar-container {
+    position: relative;
+    overflow: hidden;
+    height: 250px;
+}
+
+.kartu-olahraga img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.kartu-olahraga:hover img {
+    transform: scale(1.05);
+}
+
+.kartu-olahraga .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.8) 0%, rgba(32, 178, 170, 0.8) 100%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kartu-olahraga:hover .overlay {
+    opacity: 1;
+}
+
+.kartu-olahraga .overlay-text {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.kartu-olahraga .konten {
+    padding: 30px;
+    text-align: left;
+}
+
+.kartu-olahraga h3 {
+    font-size: 1.6rem;
+    color: #2c3e50;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.kartu-olahraga p {
+    color: #64748b;
+    line-height: 1.7;
+    font-size: 1rem;
+}
+
+/* Section Testimoni */
+.bagian-testimoni {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
+}
+
+.container-testimoni {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.container-testimoni h2 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.container-testimoni .subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-testimoni {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.kartu-testimoni {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(64, 224, 208, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(64, 224, 208, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.kartu-testimoni::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 4rem;
+    color: rgba(64, 224, 208, 0.2);
+    font-family: serif;
+    line-height: 1;
+}
+
+.kartu-testimoni:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 70px rgba(64, 224, 208, 0.12);
+}
+
+.kartu-testimoni p {
+    font-style: italic;
+    color: #64748b;
+    margin-bottom: 24px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.profil-testimoni {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.profil-testimoni .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.profil-testimoni .info h4 {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+}
+
+.profil-testimoni .info p {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin: 0;
+    font-style: normal;
+}
+
+.profil-testimoni .info span {
+    color: #40e0d0;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* CTA Section */
+.bagian-cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bagian-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="b" cx="50%" cy="50%"><stop offset="0%" stop-color="white" stop-opacity="0.1"/><stop offset="100%" stop-color="white" stop-opacity="0"/></radialGradient></defs><circle cx="100" cy="100" r="200" fill="url(%23b)"/><circle cx="900" cy="900" r="300" fill="url(%23b)"/></svg>');
+    z-index: 1;
+}
+
+.container-cta {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.container-cta h2 {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.container-cta p {
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+.tombol-cta {
+    background: white;
+    color: #40e0d0;
+    padding: 18px 36px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.tombol-cta:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    background: #f8f9fa;
+}
+
+/* Footer */
+.footer-utama {
+    background: #2c3e50;
+    padding: 60px 0 30px;
+    text-align: center;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: #40e0d0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section a {
+    color: #94a3b8;
+    text-decoration: none;
+    line-height: 1.8;
+    transition: all 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #40e0d0;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #475569;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #94a3b8;
+    font-size: 1rem;
+}
+
+.footer-bottom .highlight {
+    color: #40e0d0;
+    font-weight: 600;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.kartu-keunggulan,
+.kartu-olahraga,
+.kartu-testimoni {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.gambar-hero img {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading Animation */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #40e0d0;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Utility Classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mb-0 { margin-bottom: 0; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+.mt-0 { margin-top: 0; }
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
