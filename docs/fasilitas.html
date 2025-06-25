@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fasilitas - NaufalNyaa SportEase</title>
+    <meta name="description" content="Fasilitas lengkap dan modern di NaufalNyaa SportEase untuk pengalaman olahraga yang maksimal">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fasilitas-style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar-utama">
+    <nav class="navbar-utama" id="navbar">
         <div class="container-navbar">
             <div class="logo">
                 <h2><span class="nama-utama">NaufalNyaa</span> <span class="nama-brand">SportEase</span></h2>
@@ -23,7 +27,7 @@
                 <li><a href="https://wa.me/6289533736447?text=Halo%20saya%20ingin%20bertanya%20tentang%20fasilitas" target="_blank">Hubungi</a></li>
                 <li><a href="login.html" class="tombol-login-member">Join VIP</a></li>
             </ul>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" id="hamburgerMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,8 +38,8 @@
     <!-- Header Fasilitas -->
     <section class="header-fasilitas">
         <div class="container-header-fasilitas">
-            <h1>Fasilitas Lengkap</h1>
-            <p>Nikmati berbagai fasilitas pendukung untuk pengalaman olahraga yang maksimal</p>
+            <h1>Fasilitas <span class="highlight">Lengkap</span></h1>
+            <p>Nikmati berbagai fasilitas pendukung untuk pengalaman olahraga yang maksimal dan nyaman</p>
         </div>
     </section>
 
@@ -46,16 +50,16 @@
                 <!-- Parkir Mobil -->
                 <div class="kartu-fasilitas">
                     <div class="gambar-fasilitas">
-                        <img src="assets/gambar/parmobil.png" alt="Parkiran Mobil">
+                        <img src="assets/gambar/parmobil.png" alt="Parkiran Mobil Luas">
                     </div>
                     <div class="konten-fasilitas">
                         <h3>🚗 Parkiran Mobil</h3>
-                        <p>Area parkir mobil yang luas dan aman dengan kapasitas hingga 50 mobil. Dilengkapi dengan sistem keamanan 24 jam dan penjaga parkir.</p>
+                        <p>Area parkir mobil yang luas dan aman dengan kapasitas hingga 50 mobil. Dilengkapi dengan sistem keamanan 24 jam dan penjaga parkir profesional.</p>
                         <ul class="detail-fasilitas">
-                            <li>• Kapasitas 50 mobil</li>
-                            <li>• Keamanan 24 jam</li>
-                            <li>• CCTV lengkap</li>
-                            <li>• Gratis untuk member</li>
+                            <li>Kapasitas 50 mobil</li>
+                            <li>Keamanan 24 jam</li>
+                            <li>CCTV lengkap</li>
+                            <li>Gratis untuk member</li>
                         </ul>
                     </div>
                 </div>
@@ -63,16 +67,16 @@
                 <!-- Parkir Motor -->
                 <div class="kartu-fasilitas">
                     <div class="gambar-fasilitas">
-                        <img src="assets/gambar/parmotor.png" alt="Parkiran Motor">
+                        <img src="assets/gambar/parmotor.png" alt="Parkiran Motor Aman">
                     </div>
                     <div class="konten-fasilitas">
                         <h3>🏍️ Parkiran Motor</h3>
-                        <p>Area parkir motor yang tertata rapi dengan kapasitas besar. Lokasi strategis dan mudah diakses dari semua area olahraga.</p>
+                        <p>Area parkir motor yang tertata rapi dengan kapasitas besar. Lokasi strategis dan mudah diakses dari semua area olahraga dengan keamanan terjamin.</p>
                         <ul class="detail-fasilitas">
-                            <li>• Kapasitas 100 motor</li>
-                            <li>• Area tertutup</li>
-                            <li>• Sistem kunci ganda</li>
-                            <li>• Dekat pintu masuk</li>
+                            <li>Kapasitas 100 motor</li>
+                            <li>Area tertutup</li>
+                            <li>Sistem kunci ganda</li>
+                            <li>Dekat pintu masuk</li>
                         </ul>
                     </div>
                 </div>
@@ -80,16 +84,16 @@
                 <!-- Toilet -->
                 <div class="kartu-fasilitas">
                     <div class="gambar-fasilitas">
-                        <img src="assets/gambar/toilet.png" alt="Toilet Bersih">
+                        <img src="assets/gambar/toilet.png" alt="Toilet Bersih Modern">
                     </div>
                     <div class="konten-fasilitas">
                         <h3>🚽 Toilet Bersih</h3>
-                        <p>Toilet yang selalu bersih dan terawat dengan fasilitas modern. Tersedia di setiap lantai dan dekat area olahraga.</p>
+                        <p>Toilet yang selalu bersih dan terawat dengan fasilitas modern. Tersedia di setiap lantai dan dekat area olahraga untuk kemudahan akses.</p>
                         <ul class="detail-fasilitas">
-                            <li>• Selalu bersih & wangi</li>
-                            <li>• Air panas tersedia</li>
-                            <li>• Toilet pria & wanita</li>
-                            <li>• Akses difabel</li>
+                            <li>Selalu bersih & wangi</li>
+                            <li>Air panas tersedia</li>
+                            <li>Toilet pria & wanita</li>
+                            <li>Akses difabel</li>
                         </ul>
                     </div>
                 </div>
@@ -97,16 +101,16 @@
                 <!-- Ruang Ganti -->
                 <div class="kartu-fasilitas">
                     <div class="gambar-fasilitas">
-                        <img src="assets/gambar/ruangganti.png" alt="Ruang Ganti">
+                        <img src="assets/gambar/ruangganti.png" alt="Ruang Ganti Nyaman">
                     </div>
                     <div class="konten-fasilitas">
                         <h3>👔 Ruang Ganti</h3>
-                        <p>Ruang ganti yang nyaman dan pribadi dengan loker penyimpanan yang aman. Dilengkapi dengan cermin dan tempat duduk.</p>
+                        <p>Ruang ganti yang nyaman dan pribadi dengan loker penyimpanan yang aman. Dilengkapi dengan cermin besar dan tempat duduk yang nyaman.</p>
                         <ul class="detail-fasilitas">
-                            <li>• Ruang pribadi</li>
-                            <li>• Loker tersedia</li>
-                            <li>• Cermin besar</li>
-                            <li>• AC dan ventilasi</li>
+                            <li>Ruang pribadi</li>
+                            <li>Loker tersedia</li>
+                            <li>Cermin besar</li>
+                            <li>AC dan ventilasi</li>
                         </ul>
                     </div>
                 </div>
@@ -114,16 +118,16 @@
                 <!-- Kantin -->
                 <div class="kartu-fasilitas">
                     <div class="gambar-fasilitas">
-                        <img src="assets/gambar/kantin.png" alt="Kantin">
+                        <img src="assets/gambar/kantin.png" alt="Kantin Sehat">
                     </div>
                     <div class="konten-fasilitas">
                         <h3>🍽️ Kantin</h3>
-                        <p>Kantin dengan menu makanan sehat dan minuman segar. Cocok untuk mengisi energi sebelum atau sesudah berolahraga.</p>
+                        <p>Kantin dengan menu makanan sehat dan minuman segar. Cocok untuk mengisi energi sebelum atau sesudah berolahraga dengan harga terjangkau.</p>
                         <ul class="detail-fasilitas">
-                            <li>• Menu makanan sehat</li>
-                            <li>• Minuman segar</li>
-                            <li>• Harga terjangkau</li>
-                            <li>• Area duduk nyaman</li>
+                            <li>Menu makanan sehat</li>
+                            <li>Minuman segar</li>
+                            <li>Harga terjangkau</li>
+                            <li>Area duduk nyaman</li>
                         </ul>
                     </div>
                 </div>
@@ -131,16 +135,16 @@
                 <!-- Tempat Penitipan Barang -->
                 <div class="kartu-fasilitas">
                     <div class="gambar-fasilitas">
-                        <img src="assets/gambar/loker.png" alt="Loker Penitipan">
+                        <img src="assets/gambar/loker.png" alt="Loker Penitipan Aman">
                     </div>
                     <div class="konten-fasilitas">
                         <h3>🔒 Tempat Penitipan Barang</h3>
-                        <p>Loker penyimpanan yang aman untuk barang berharga Anda. Sistem kunci elektronik untuk keamanan maksimal.</p>
+                        <p>Loker penyimpanan yang aman untuk barang berharga Anda. Sistem kunci elektronik untuk keamanan maksimal dengan pengawasan CCTV.</p>
                         <ul class="detail-fasilitas">
-                            <li>• Loker elektronik</li>
-                            <li>• Keamanan tinggi</li>
-                            <li>• Berbagai ukuran</li>
-                            <li>• Pengawasan CCTV</li>
+                            <li>Loker elektronik</li>
+                            <li>Keamanan tinggi</li>
+                            <li>Berbagai ukuran</li>
+                            <li>Pengawasan CCTV</li>
                         </ul>
                     </div>
                 </div>
@@ -151,37 +155,38 @@
     <!-- Fasilitas Tambahan -->
     <section class="bagian-fasilitas-tambahan">
         <div class="container-fasilitas-tambahan">
-            <h2>Fasilitas Tambahan</h2>
+            <h2>Fasilitas <span class="highlight">Tambahan</span></h2>
+            <p class="subtitle">Fasilitas pendukung lainnya untuk kenyamanan dan kemudahan Anda</p>
             <div class="grid-fasilitas-tambahan">
                 <div class="item-fasilitas-tambahan">
                     <div class="ikon-fasilitas">📶</div>
                     <h3>WiFi Gratis</h3>
-                    <p>Koneksi internet cepat dan stabil di semua area</p>
+                    <p>Koneksi internet cepat dan stabil di semua area untuk tetap terhubung</p>
                 </div>
                 <div class="item-fasilitas-tambahan">
                     <div class="ikon-fasilitas">❄️</div>
                     <h3>AC & Ventilasi</h3>
-                    <p>Suhu ruangan yang selalu sejuk dan nyaman</p>
+                    <p>Suhu ruangan yang selalu sejuk dan nyaman dengan sirkulasi udara optimal</p>
                 </div>
                 <div class="item-fasilitas-tambahan">
                     <div class="ikon-fasilitas">🎵</div>
                     <h3>Sound System</h3>
-                    <p>Sistem audio berkualitas untuk menambah semangat</p>
+                    <p>Sistem audio berkualitas tinggi untuk menambah semangat berolahraga</p>
                 </div>
                 <div class="item-fasilitas-tambahan">
                     <div class="ikon-fasilitas">🚿</div>
                     <h3>Shower</h3>
-                    <p>Kamar mandi dengan shower air panas dan dingin</p>
+                    <p>Kamar mandi dengan shower air panas dan dingin untuk kesegaran setelah olahraga</p>
                 </div>
                 <div class="item-fasilitas-tambahan">
                     <div class="ikon-fasilitas">🏥</div>
                     <h3>P3K</h3>
-                    <p>Kotak P3K lengkap dan petugas terlatih</p>
+                    <p>Kotak P3K lengkap dan petugas terlatih untuk keamanan dan keselamatan</p>
                 </div>
                 <div class="item-fasilitas-tambahan">
                     <div class="ikon-fasilitas">💡</div>
                     <h3>Pencahayaan LED</h3>
-                    <p>Penerangan optimal dengan lampu LED hemat energi</p>
+                    <p>Penerangan optimal dengan lampu LED hemat energi dan ramah lingkungan</p>
                 </div>
             </div>
         </div>
@@ -190,7 +195,36 @@
     <!-- Footer -->
     <footer class="footer-utama">
         <div class="container-footer">
-            <p>Created By 💖 NaufalNyaa</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NaufalNyaa SportEase</h3>
+                    <p>Platform booking tempat olahraga terbaik dengan fasilitas modern dan pelayanan prima untuk semua kebutuhan olahraga Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="booking.html">Booking Online</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="login.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="https://wa.me/6289533736447" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:info@sportease.com">Email</a></li>
+                        <li><a href="author.html">Tentang Pembuat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Minggu<br>06:00 - 23:00 WIB</p>
+                    <p>Booking Online 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Created with <span class="highlight">💖</span> by <span class="highlight">NaufalNyaa</span> | © 2024 SportEase. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

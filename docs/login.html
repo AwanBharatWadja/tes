@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Member - NaufalNyaa SportEase</title>
+    <meta name="description" content="Login member NaufalNyaa SportEase untuk akses eksklusif dan berbagai keuntungan menarik">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/login-style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar-utama">
+    <nav class="navbar-utama" id="navbar">
         <div class="container-navbar">
             <div class="logo">
                 <h2><span class="nama-utama">NaufalNyaa</span> <span class="nama-brand">SportEase</span></h2>
@@ -23,7 +27,7 @@
                 <li><a href="https://wa.me/6289533736447?text=Halo%20saya%20ingin%20bertanya%20tentang%20membership" target="_blank">Hubungi</a></li>
                 <li><a href="login.html" class="aktif tombol-login-member">Join VIP</a></li>
             </ul>
-            <div class="hamburger-menu">
+            <div class="hamburger-menu" id="hamburgerMenu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -38,7 +42,7 @@
                 <div class="bagian-kiri">
                     <div class="konten-kiri">
                         <h2>Selamat Datang Kembali!</h2>
-                        <p>Login untuk mengakses akun member Anda dan nikmati berbagai keuntungan eksklusif.</p>
+                        <p>Login untuk mengakses akun member Anda dan nikmati berbagai keuntungan eksklusif dari NaufalNyaa SportEase.</p>
                         <div class="keuntungan-member">
                             <div class="item-keuntungan">
                                 <span class="ikon">🎯</span>
@@ -83,7 +87,7 @@
                                 <a href="#" class="lupa-password">Lupa password?</a>
                             </div>
 
-                            <button type="submit" class="tombol-login">Masuk</button>
+                            <button type="submit" class="tombol-login">🚀 Masuk</button>
                         </form>
 
                         <div class="atau-divider">
@@ -113,7 +117,8 @@
     <!-- Section Jenis Member -->
     <section class="bagian-jenis-member">
         <div class="container-jenis-member">
-            <h2>Jenis Keanggotaan</h2>
+            <h2>Jenis <span class="highlight">Keanggotaan</span></h2>
+            <p class="subtitle">Pilih paket membership yang sesuai dengan kebutuhan olahraga Anda</p>
             <div class="grid-member">
                 <div class="kartu-member">
                     <div class="header-kartu">
@@ -121,10 +126,10 @@
                         <div class="harga-member">Gratis</div>
                     </div>
                     <ul class="fitur-member">
-                        <li>✓ Booking online</li>
-                        <li>✓ Diskon 5%</li>
-                        <li>✓ Notifikasi promo</li>
-                        <li>✓ History booking</li>
+                        <li>Booking online</li>
+                        <li>Diskon 5%</li>
+                        <li>Notifikasi promo</li>
+                        <li>History booking</li>
                     </ul>
                     <button class="tombol-pilih-member">Pilih Paket</button>
                 </div>
@@ -136,11 +141,11 @@
                         <div class="harga-member">Rp 99.000<span>/bulan</span></div>
                     </div>
                     <ul class="fitur-member">
-                        <li>✓ Semua fitur Reguler</li>
-                        <li>✓ Diskon 15%</li>
-                        <li>✓ Booking prioritas</li>
-                        <li>✓ Konsultasi gratis</li>
-                        <li>✓ Akses gym 24/7</li>
+                        <li>Semua fitur Reguler</li>
+                        <li>Diskon 15%</li>
+                        <li>Booking prioritas</li>
+                        <li>Konsultasi gratis</li>
+                        <li>Akses gym 24/7</li>
                     </ul>
                     <button class="tombol-pilih-member">Pilih Paket</button>
                 </div>
@@ -151,12 +156,12 @@
                         <div class="harga-member">Rp 199.000<span>/bulan</span></div>
                     </div>
                     <ul class="fitur-member">
-                        <li>✓ Semua fitur Premium</li>
-                        <li>✓ Diskon 25%</li>
-                        <li>✓ Personal trainer</li>
-                        <li>✓ Free towel & loker</li>
-                        <li>✓ Guest pass (2x/bulan)</li>
-                        <li>✓ Parkir VIP</li>
+                        <li>Semua fitur Premium</li>
+                        <li>Diskon 25%</li>
+                        <li>Personal trainer</li>
+                        <li>Free towel & loker</li>
+                        <li>Guest pass (2x/bulan)</li>
+                        <li>Parkir VIP</li>
                     </ul>
                     <button class="tombol-pilih-member">Pilih Paket</button>
                 </div>
@@ -167,7 +172,36 @@
     <!-- Footer -->
     <footer class="footer-utama">
         <div class="container-footer">
-            <p>Created By 💖 NaufalNyaa</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NaufalNyaa SportEase</h3>
+                    <p>Platform booking tempat olahraga terbaik dengan fasilitas modern dan pelayanan prima untuk semua kebutuhan olahraga Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="booking.html">Booking Online</a></li>
+                        <li><a href="fasilitas.html">Fasilitas</a></li>
+                        <li><a href="login.html">Membership</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul>
+                        <li><a href="https://wa.me/6289533736447" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:info@sportease.com">Email</a></li>
+                        <li><a href="author.html">Tentang Pembuat</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Jam Operasional</h3>
+                    <p>Senin - Minggu<br>06:00 - 23:00 WIB</p>
+                    <p>Booking Online 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Created with <span class="highlight">💖</span> by <span class="highlight">NaufalNyaa</span> | © 2024 SportEase. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

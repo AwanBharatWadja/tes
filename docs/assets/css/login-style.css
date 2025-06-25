@@ -2,40 +2,75 @@
 .bagian-login {
     padding: 120px 0 80px;
     min-height: 100vh;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.05) 0%, rgba(255, 255, 255, 0.9) 100%);
     display: flex;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.bagian-login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="c" cx="50%" cy="50%"><stop offset="0%" stop-color="%2340e0d0" stop-opacity="0.1"/><stop offset="100%" stop-color="%2340e0d0" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="300" fill="url(%23c)"/><circle cx="800" cy="800" r="400" fill="url(%23c)"/></svg>');
+    z-index: -1;
 }
 
 .container-login {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    position: relative;
+    z-index: 2;
 }
 
 .kotak-login {
     background: white;
-    border-radius: 20px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    box-shadow: 0 25px 80px rgba(64, 224, 208, 0.15);
     overflow: hidden;
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-height: 600px;
+    border: 1px solid rgba(64, 224, 208, 0.1);
 }
 
 /* Bagian Kiri */
 .bagian-kiri {
-    background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     padding: 60px 50px;
     display: flex;
     align-items: center;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.bagian-kiri::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><defs><radialGradient id="d" cx="50%" cy="50%"><stop offset="0%" stop-color="white" stop-opacity="0.1"/><stop offset="100%" stop-color="white" stop-opacity="0"/></radialGradient></defs><circle cx="100" cy="100" r="200" fill="url(%23d)"/><circle cx="900" cy="900" r="300" fill="url(%23d)"/></svg>');
+    z-index: 1;
+}
+
+.konten-kiri {
+    position: relative;
+    z-index: 2;
 }
 
 .konten-kiri h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    font-weight: 700;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 
 .konten-kiri p {
@@ -75,10 +110,11 @@
 
 .form-login h3 {
     font-size: 2rem;
-    color: #333;
+    color: #2c3e50;
     margin-bottom: 40px;
-    font-weight: 700;
+    font-weight: 800;
     text-align: center;
+    letter-spacing: -0.5px;
 }
 
 .formulir-login {
@@ -91,27 +127,27 @@
 
 .grup-input label {
     display: block;
-    color: #555;
+    color: #2c3e50;
     margin-bottom: 8px;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 1rem;
 }
 
 .grup-input input {
     width: 100%;
     padding: 15px 20px;
-    border: 2px solid #e9ecef;
-    border-radius: 10px;
+    border: 2px solid rgba(64, 224, 208, 0.2);
+    border-radius: 15px;
     font-size: 1rem;
     transition: all 0.3s ease;
-    background: #f8f9fa;
+    background: rgba(64, 224, 208, 0.05);
 }
 
 .grup-input input:focus {
     outline: none;
-    border-color: #87CEEB;
+    border-color: #40e0d0;
     background: white;
-    box-shadow: 0 0 0 3px rgba(135, 206, 235, 0.1);
+    box-shadow: 0 0 0 3px rgba(64, 224, 208, 0.1);
 }
 
 .opsi-login {
@@ -126,43 +162,46 @@
     align-items: center;
     cursor: pointer;
     font-size: 0.95rem;
-    color: #555;
+    color: #64748b;
 }
 
 .checkbox-container input {
     margin-right: 10px;
+    accent-color: #40e0d0;
 }
 
 .lupa-password {
-    color: #87CEEB;
+    color: #40e0d0;
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .lupa-password:hover {
-    color: #4682B4;
+    color: #20b2aa;
     text-decoration: underline;
 }
 
 .tombol-login {
     width: 100%;
-    background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     color: white;
     border: none;
     padding: 15px 25px;
-    border-radius: 10px;
+    border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-bottom: 30px;
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.3);
 }
 
 .tombol-login:hover {
-    background: linear-gradient(135deg, #4682B4 0%, #2E5984 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(70, 130, 180, 0.3);
+    background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(64, 224, 208, 0.4);
 }
 
 .atau-divider {
@@ -174,7 +213,7 @@
 .atau-divider span {
     background: white;
     padding: 0 20px;
-    color: #666;
+    color: #64748b;
     font-size: 0.95rem;
 }
 
@@ -185,7 +224,7 @@
     left: 0;
     right: 0;
     height: 1px;
-    background: #e9ecef;
+    background: rgba(64, 224, 208, 0.2);
     z-index: -1;
 }
 
@@ -200,10 +239,10 @@
 .tombol-facebook {
     width: 100%;
     padding: 12px 20px;
-    border: 2px solid #e9ecef;
-    border-radius: 10px;
+    border: 2px solid rgba(64, 224, 208, 0.2);
+    border-radius: 15px;
     background: white;
-    color: #555;
+    color: #64748b;
     font-size: 1rem;
     font-weight: 500;
     cursor: pointer;
@@ -218,12 +257,16 @@
     border-color: #db4437;
     background: #db4437;
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(219, 68, 55, 0.3);
 }
 
 .tombol-facebook:hover {
     border-color: #4267B2;
     background: #4267B2;
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(66, 103, 178, 0.3);
 }
 
 .ikon-google,
@@ -237,18 +280,19 @@
 }
 
 .link-daftar p {
-    color: #666;
+    color: #64748b;
     font-size: 0.95rem;
 }
 
 .link-registrasi {
-    color: #87CEEB;
+    color: #40e0d0;
     text-decoration: none;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .link-registrasi:hover {
-    color: #4682B4;
+    color: #20b2aa;
     text-decoration: underline;
 }
 
@@ -266,10 +310,20 @@
 }
 
 .container-jenis-member h2 {
-    font-size: 2.5rem;
-    color: #333;
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+}
+
+.container-jenis-member .subtitle {
+    font-size: 1.2rem;
+    color: #64748b;
     margin-bottom: 60px;
-    font-weight: 700;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid-member {
@@ -280,23 +334,35 @@
 
 .kartu-member {
     background: white;
-    border: 2px solid #f0f0f0;
-    border-radius: 20px;
+    border: 2px solid rgba(64, 224, 208, 0.1);
+    border-radius: 25px;
     padding: 40px 30px;
     position: relative;
     transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.kartu-member::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
 }
 
 .kartu-member:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(135, 206, 235, 0.2);
-    border-color: #87CEEB;
+    box-shadow: 0 25px 70px rgba(64, 224, 208, 0.15);
+    border-color: #40e0d0;
 }
 
 .kartu-member.featured {
-    border-color: #4682B4;
-    background: linear-gradient(135deg, #f8f9fa 0%, white 100%);
+    border-color: #40e0d0;
+    background: linear-gradient(135deg, rgba(64, 224, 208, 0.05) 0%, white 100%);
     transform: scale(1.05);
+    box-shadow: 0 20px 60px rgba(64, 224, 208, 0.2);
 }
 
 .kartu-member.featured:hover {
@@ -308,31 +374,33 @@
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #4682B4;
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
+    box-shadow: 0 5px 15px rgba(64, 224, 208, 0.3);
 }
 
 .header-kartu h3 {
     font-size: 1.8rem;
-    color: #333;
+    color: #2c3e50;
     margin-bottom: 15px;
     font-weight: 700;
 }
 
 .harga-member {
     font-size: 2.5rem;
-    color: #4682B4;
-    font-weight: 700;
+    color: #40e0d0;
+    font-weight: 800;
     margin-bottom: 30px;
+    letter-spacing: -1px;
 }
 
 .harga-member span {
     font-size: 1rem;
-    color: #666;
+    color: #64748b;
     font-weight: 400;
 }
 
@@ -343,27 +411,48 @@
 }
 
 .fitur-member li {
-    color: #555;
+    color: #64748b;
     margin-bottom: 12px;
     font-size: 1rem;
     padding-left: 10px;
 }
 
+.fitur-member li::before {
+    content: '✓';
+    color: #40e0d0;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
 .tombol-pilih-member {
     width: 100%;
-    background: linear-gradient(135deg, #87CEEB 0%, #4682B4 100%);
+    background: linear-gradient(135deg, #40e0d0 0%, #20b2aa 100%);
     color: white;
     border: none;
     padding: 15px 25px;
-    border-radius: 30px;
+    border-radius: 50px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(64, 224, 208, 0.3);
 }
 
 .tombol-pilih-member:hover {
-    background: linear-gradient(135deg, #4682B4 0%, #2E5984 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(70, 130, 180, 0.4);
+    background: linear-gradient(135deg, #20b2aa 0%, #008b8b 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(64, 224, 208, 0.4);
+}
+
+/* Animasi */
+.kartu-member {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.kartu-member:nth-child(even) {
+    animation-delay: 0.2s;
+}
+
+.kartu-member:nth-child(3n) {
+    animation-delay: 0.4s;
 }
