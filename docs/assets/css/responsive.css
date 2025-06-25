@@ -7,7 +7,11 @@
     .container-olahraga,
     .container-testimoni,
     .container-cta,
-    .container-footer {
+    .container-footer,
+    .container-author,
+    .container-hobi,
+    .container-keahlian,
+    .container-sosial {
         max-width: 1400px;
     }
 
@@ -39,9 +43,26 @@
 
     .grid-keunggulan,
     .grid-olahraga,
-    .grid-testimoni {
+    .grid-testimoni,
+    .grid-hobi,
+    .grid-sosial {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         gap: 30px;
+    }
+
+    /* Author Page Tablet */
+    .profil-author {
+        grid-template-columns: 350px 1fr;
+        gap: 60px;
+    }
+
+    .foto-author img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .info-author h1 {
+        font-size: 2.8rem;
     }
 }
 
@@ -63,7 +84,9 @@
 
     .grid-keunggulan,
     .grid-olahraga,
-    .grid-testimoni {
+    .grid-testimoni,
+    .grid-hobi,
+    .grid-sosial {
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 30px;
     }
@@ -76,6 +99,52 @@
     .footer-content {
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
+    }
+
+    /* Author Page Tablet */
+    .profil-author {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .foto-author img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .info-author {
+        text-align: center;
+    }
+
+    .info-author h1 {
+        font-size: 2.5rem;
+    }
+
+    .detail-info {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    /* Booking & Fasilitas Tablet */
+    .grid-tempat-olahraga,
+    .grid-fasilitas {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+    }
+
+    /* Login Tablet */
+    .kotak-login {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .bagian-kiri {
+        padding: 40px 30px;
+    }
+
+    .bagian-kanan {
+        padding: 40px 30px;
     }
 }
 
@@ -186,14 +255,20 @@
     .container-mengapa h2,
     .container-olahraga h2,
     .container-testimoni h2,
-    .container-cta h2 {
+    .container-cta h2,
+    .container-hobi h2,
+    .container-keahlian h2,
+    .container-sosial h2 {
         font-size: 2.5rem;
         margin-bottom: 16px;
     }
 
     .container-mengapa .subtitle,
     .container-olahraga .subtitle,
-    .container-testimoni .subtitle {
+    .container-testimoni .subtitle,
+    .container-hobi .subtitle,
+    .container-keahlian .subtitle,
+    .container-sosial .subtitle {
         font-size: 1.1rem;
         margin-bottom: 40px;
     }
@@ -201,7 +276,11 @@
     /* Cards Mobile */
     .grid-keunggulan,
     .grid-olahraga,
-    .grid-testimoni {
+    .grid-testimoni,
+    .grid-hobi,
+    .grid-sosial,
+    .grid-tempat-olahraga,
+    .grid-fasilitas {
         grid-template-columns: 1fr;
         gap: 25px;
         margin-top: 40px;
@@ -209,8 +288,206 @@
 
     .kartu-keunggulan,
     .kartu-olahraga,
-    .kartu-testimoni {
+    .kartu-testimoni,
+    .kartu-hobi,
+    .kartu-sosial,
+    .kartu-tempat-olahraga,
+    .kartu-fasilitas {
         margin: 0 10px;
+    }
+
+    /* Author Page Mobile */
+    .header-author {
+        padding: 100px 0 40px;
+    }
+
+    .header-author h1 {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+        line-height: 1.2;
+    }
+
+    .header-author p {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .bagian-author,
+    .bagian-hobi,
+    .bagian-keahlian,
+    .bagian-sosial {
+        padding: 60px 0;
+    }
+
+    .profil-author {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .foto-author img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .status-online {
+        margin-top: 20px;
+        font-size: 1rem;
+    }
+
+    .info-author h1 {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        line-height: 1.2;
+    }
+
+    .nim {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        padding: 6px 12px;
+    }
+
+    .deskripsi {
+        font-size: 1.1rem;
+        line-height: 1.7;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .detail-info {
+        gap: 20px;
+    }
+
+    .info-item {
+        padding: 16px;
+        text-align: left;
+    }
+
+    .info-item h3 {
+        font-size: 1.2rem;
+        margin-bottom: 6px;
+    }
+
+    .info-item p {
+        font-size: 1rem;
+    }
+
+    /* Hobi Cards Mobile */
+    .grid-hobi {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .kartu-hobi {
+        padding: 30px 25px;
+        margin: 0 5px;
+    }
+
+    .ikon-hobi {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+    }
+
+    .kartu-hobi h3 {
+        font-size: 1.4rem;
+        margin-bottom: 14px;
+    }
+
+    .kartu-hobi p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    /* Skills Mobile */
+    .keahlian-kategori {
+        margin-bottom: 40px;
+    }
+
+    .keahlian-kategori h3 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .skill-item {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 0;
+        gap: 10px;
+    }
+
+    .skill-name {
+        min-width: auto;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .skill-bar-container {
+        margin: 0;
+        height: 10px;
+    }
+
+    .skill-percentage {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* Social Cards Mobile */
+    .grid-sosial {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .kartu-sosial {
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .ikon-sosial {
+        width: 60px;
+        height: 60px;
+    }
+
+    .info-sosial {
+        text-align: center;
+    }
+
+    .info-sosial h3 {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+    }
+
+    .info-sosial p {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .info-sosial span {
+        font-size: 0.9rem;
+    }
+
+    /* Quote Mobile */
+    .bagian-quote {
+        padding: 60px 0;
+    }
+
+    .container-quote blockquote {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .container-quote blockquote::before {
+        font-size: 4rem;
+        top: -25px;
+        left: -30px;
+    }
+
+    .container-quote cite {
+        font-size: 1.1rem;
+        margin-top: 25px;
     }
 
     /* CTA Section Mobile */
@@ -239,7 +516,13 @@
     .bagian-mengapa,
     .bagian-olahraga,
     .bagian-testimoni,
-    .bagian-cta {
+    .bagian-cta,
+    .bagian-booking,
+    .bagian-fasilitas,
+    .bagian-info-booking,
+    .bagian-fasilitas-tambahan,
+    .bagian-login,
+    .bagian-jenis-member {
         padding: 80px 0;
     }
 
@@ -255,8 +538,161 @@
     .container-olahraga,
     .container-testimoni,
     .container-cta,
-    .container-footer {
+    .container-footer,
+    .container-header-author,
+    .container-author,
+    .container-hobi,
+    .container-keahlian,
+    .container-sosial,
+    .container-quote,
+    .container-booking,
+    .container-fasilitas,
+    .container-info-booking,
+    .container-fasilitas-tambahan,
+    .container-login,
+    .container-jenis-member {
         padding: 0 20px;
+    }
+
+    /* Booking & Fasilitas Mobile */
+    .header-booking,
+    .header-fasilitas {
+        padding: 100px 0 40px;
+    }
+
+    .header-booking h1,
+    .header-fasilitas h1 {
+        font-size: 2.5rem;
+        margin-bottom: 16px;
+    }
+
+    .header-booking p,
+    .header-fasilitas p {
+        font-size: 1.1rem;
+    }
+
+    .grid-fasilitas-tambahan {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .item-fasilitas-tambahan {
+        padding: 30px 20px;
+    }
+
+    .ikon-fasilitas {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .item-fasilitas-tambahan h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .item-fasilitas-tambahan p {
+        font-size: 0.95rem;
+    }
+
+    /* Login Mobile */
+    .bagian-login {
+        padding: 100px 0 60px;
+    }
+
+    .kotak-login {
+        grid-template-columns: 1fr;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+
+    .bagian-kiri {
+        padding: 30px 25px;
+    }
+
+    .konten-kiri h2 {
+        font-size: 2rem;
+        margin-bottom: 16px;
+    }
+
+    .konten-kiri p {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .keuntungan-member {
+        gap: 15px;
+    }
+
+    .item-keuntungan {
+        font-size: 1rem;
+    }
+
+    .bagian-kanan {
+        padding: 30px 25px;
+    }
+
+    .form-login h3 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .grup-input {
+        margin-bottom: 20px;
+    }
+
+    .grup-input input {
+        padding: 12px 16px;
+        font-size: 0.95rem;
+    }
+
+    .opsi-login {
+        margin-bottom: 25px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .tombol-login,
+    .tombol-google,
+    .tombol-facebook {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .grid-member {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .kartu-member {
+        padding: 30px 25px;
+    }
+
+    .kartu-member.featured {
+        transform: none;
+    }
+
+    .kartu-member.featured:hover {
+        transform: translateY(-10px);
+    }
+
+    .header-kartu h3 {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .harga-member {
+        font-size: 2.2rem;
+        margin-bottom: 25px;
+    }
+
+    .fitur-member {
+        margin-bottom: 25px;
+    }
+
+    .fitur-member li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
     }
 }
 
@@ -283,7 +719,10 @@
 
     .container-mengapa h2,
     .container-olahraga h2,
-    .container-testimoni h2 {
+    .container-testimoni h2,
+    .container-hobi h2,
+    .container-keahlian h2,
+    .container-sosial h2 {
         font-size: 2.2rem;
     }
 
@@ -301,16 +740,116 @@
     }
 
     .kartu-keunggulan,
-    .kartu-testimoni {
+    .kartu-testimoni,
+    .kartu-hobi {
         padding: 30px 25px;
     }
 
-    .kartu-olahraga .konten {
+    .kartu-olahraga .konten,
+    .konten-fasilitas {
         padding: 25px;
     }
 
-    .kartu-olahraga .gambar-container {
+    .kartu-olahraga .gambar-container,
+    .gambar-fasilitas {
         height: 220px;
+    }
+
+    /* Author Page Medium Mobile */
+    .header-author h1 {
+        font-size: 2.2rem;
+    }
+
+    .header-author p {
+        font-size: 1rem;
+    }
+
+    .foto-author img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .info-author h1 {
+        font-size: 2rem;
+    }
+
+    .nim {
+        font-size: 1rem;
+    }
+
+    .deskripsi {
+        font-size: 1rem;
+    }
+
+    .info-item {
+        padding: 14px;
+    }
+
+    .info-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .info-item p {
+        font-size: 0.95rem;
+    }
+
+    .kartu-hobi {
+        padding: 25px 20px;
+    }
+
+    .ikon-hobi {
+        font-size: 3rem;
+    }
+
+    .kartu-hobi h3 {
+        font-size: 1.3rem;
+    }
+
+    .keahlian-kategori h3 {
+        font-size: 1.5rem;
+    }
+
+    .skill-name {
+        font-size: 0.95rem;
+    }
+
+    .skill-percentage {
+        font-size: 0.95rem;
+    }
+
+    .kartu-sosial {
+        padding: 20px;
+    }
+
+    .ikon-sosial {
+        width: 50px;
+        height: 50px;
+    }
+
+    .info-sosial h3 {
+        font-size: 1.2rem;
+    }
+
+    .info-sosial p {
+        font-size: 0.95rem;
+    }
+
+    .container-quote blockquote {
+        font-size: 1.6rem;
+    }
+
+    .container-quote cite {
+        font-size: 1rem;
+    }
+
+    /* Fasilitas Medium Mobile */
+    .grid-fasilitas-tambahan {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .item-fasilitas-tambahan {
+        padding: 25px 20px;
     }
 }
 
@@ -335,7 +874,10 @@
 
     .container-mengapa h2,
     .container-olahraga h2,
-    .container-testimoni h2 {
+    .container-testimoni h2,
+    .container-hobi h2,
+    .container-keahlian h2,
+    .container-sosial h2 {
         font-size: 2rem;
     }
 
@@ -368,16 +910,19 @@
     }
 
     .kartu-keunggulan,
-    .kartu-testimoni {
+    .kartu-testimoni,
+    .kartu-hobi {
         padding: 25px 20px;
         margin: 0 5px;
     }
 
-    .kartu-olahraga .konten {
+    .kartu-olahraga .konten,
+    .konten-fasilitas {
         padding: 20px;
     }
 
-    .kartu-olahraga .gambar-container {
+    .kartu-olahraga .gambar-container,
+    .gambar-fasilitas {
         height: 200px;
     }
 
@@ -394,6 +939,186 @@
         font-size: 1.4rem;
     }
 
+    /* Author Page Small Mobile */
+    .header-author {
+        padding: 80px 0 30px;
+    }
+
+    .header-author h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .header-author p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .bagian-author,
+    .bagian-hobi,
+    .bagian-keahlian,
+    .bagian-sosial {
+        padding: 50px 0;
+    }
+
+    .profil-author {
+        gap: 25px;
+        margin-bottom: 50px;
+    }
+
+    .foto-author img {
+        width: 160px;
+        height: 160px;
+        border: 4px solid #40e0d0;
+    }
+
+    .status-online {
+        margin-top: 16px;
+        font-size: 0.95rem;
+    }
+
+    .dot-online {
+        width: 12px;
+        height: 12px;
+    }
+
+    .info-author h1 {
+        font-size: 1.8rem;
+        margin-bottom: 8px;
+    }
+
+    .nim {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+        padding: 5px 10px;
+    }
+
+    .deskripsi {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 25px;
+    }
+
+    .detail-info {
+        gap: 16px;
+    }
+
+    .info-item {
+        padding: 12px;
+    }
+
+    .info-item h3 {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .info-item p {
+        font-size: 0.9rem;
+    }
+
+    .container-hobi h2,
+    .container-keahlian h2,
+    .container-sosial h2 {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .container-hobi .subtitle,
+    .container-keahlian .subtitle,
+    .container-sosial .subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .kartu-hobi {
+        padding: 20px 16px;
+    }
+
+    .ikon-hobi {
+        font-size: 2.8rem;
+        margin-bottom: 16px;
+    }
+
+    .kartu-hobi h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .kartu-hobi p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .keahlian-kategori {
+        margin-bottom: 35px;
+    }
+
+    .keahlian-kategori h3 {
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+    }
+
+    .skill-item {
+        padding: 10px 0;
+        gap: 8px;
+    }
+
+    .skill-name {
+        font-size: 0.9rem;
+    }
+
+    .skill-bar-container {
+        height: 8px;
+    }
+
+    .skill-percentage {
+        font-size: 0.9rem;
+    }
+
+    .kartu-sosial {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .ikon-sosial {
+        width: 45px;
+        height: 45px;
+    }
+
+    .info-sosial h3 {
+        font-size: 1.1rem;
+        margin-bottom: 4px;
+    }
+
+    .info-sosial p {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+    }
+
+    .info-sosial span {
+        font-size: 0.85rem;
+    }
+
+    .bagian-quote {
+        padding: 50px 0;
+    }
+
+    .container-quote blockquote {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+
+    .container-quote blockquote::before {
+        font-size: 3.5rem;
+        top: -20px;
+        left: -25px;
+    }
+
+    .container-quote cite {
+        font-size: 0.95rem;
+        margin-top: 20px;
+    }
+
     /* Container Padding Small Mobile */
     .container-hero,
     .container-stats,
@@ -401,7 +1126,19 @@
     .container-olahraga,
     .container-testimoni,
     .container-cta,
-    .container-footer {
+    .container-footer,
+    .container-header-author,
+    .container-author,
+    .container-hobi,
+    .container-keahlian,
+    .container-sosial,
+    .container-quote,
+    .container-booking,
+    .container-fasilitas,
+    .container-info-booking,
+    .container-fasilitas-tambahan,
+    .container-login,
+    .container-jenis-member {
         padding: 0 15px;
     }
 
@@ -410,12 +1147,249 @@
     .bagian-mengapa,
     .bagian-olahraga,
     .bagian-testimoni,
-    .bagian-cta {
+    .bagian-cta,
+    .bagian-booking,
+    .bagian-fasilitas,
+    .bagian-info-booking,
+    .bagian-fasilitas-tambahan,
+    .bagian-login,
+    .bagian-jenis-member {
         padding: 60px 0;
     }
 
     .footer-utama {
         padding: 40px 0 20px;
+    }
+
+    /* Booking & Fasilitas Small Mobile */
+    .header-booking,
+    .header-fasilitas {
+        padding: 80px 0 30px;
+    }
+
+    .header-booking h1,
+    .header-fasilitas h1 {
+        font-size: 2rem;
+        margin-bottom: 12px;
+    }
+
+    .header-booking p,
+    .header-fasilitas p {
+        font-size: 1rem;
+    }
+
+    .kartu-tempat-olahraga,
+    .kartu-fasilitas {
+        margin: 0 5px;
+    }
+
+    .konten-kartu,
+    .konten-fasilitas {
+        padding: 20px;
+    }
+
+    .konten-kartu h3,
+    .konten-fasilitas h3 {
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+    }
+
+    .konten-kartu p,
+    .konten-fasilitas p {
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+    }
+
+    .fitur-tempat,
+    .detail-fasilitas {
+        margin-bottom: 20px;
+    }
+
+    .fitur-tempat li,
+    .detail-fasilitas li {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+
+    .tombol-booking {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+
+    .label-harga {
+        top: 15px;
+        right: 15px;
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    .grid-info-booking {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .kartu-info {
+        padding: 25px 20px;
+    }
+
+    .kartu-info h3 {
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .kartu-info p {
+        font-size: 0.95rem;
+    }
+
+    .item-fasilitas-tambahan {
+        padding: 20px 16px;
+    }
+
+    .ikon-fasilitas {
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+
+    .item-fasilitas-tambahan h3 {
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+    }
+
+    .item-fasilitas-tambahan p {
+        font-size: 0.9rem;
+    }
+
+    /* Login Small Mobile */
+    .bagian-login {
+        padding: 80px 0 50px;
+    }
+
+    .kotak-login {
+        border-radius: 12px;
+    }
+
+    .bagian-kiri,
+    .bagian-kanan {
+        padding: 25px 20px;
+    }
+
+    .konten-kiri h2 {
+        font-size: 1.8rem;
+        margin-bottom: 14px;
+    }
+
+    .konten-kiri p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .keuntungan-member {
+        gap: 12px;
+    }
+
+    .item-keuntungan {
+        font-size: 0.95rem;
+    }
+
+    .form-login h3 {
+        font-size: 1.6rem;
+        margin-bottom: 25px;
+    }
+
+    .grup-input {
+        margin-bottom: 18px;
+    }
+
+    .grup-input label {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+
+    .grup-input input {
+        padding: 10px 14px;
+        font-size: 0.9rem;
+    }
+
+    .opsi-login {
+        margin-bottom: 20px;
+        gap: 12px;
+    }
+
+    .checkbox-container,
+    .lupa-password {
+        font-size: 0.9rem;
+    }
+
+    .tombol-login,
+    .tombol-google,
+    .tombol-facebook {
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+
+    .atau-divider {
+        margin: 25px 0;
+    }
+
+    .atau-divider span {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .login-sosial {
+        gap: 12px;
+        margin-bottom: 25px;
+    }
+
+    .link-daftar p {
+        font-size: 0.9rem;
+    }
+
+    .container-jenis-member h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .grid-member {
+        gap: 25px;
+    }
+
+    .kartu-member {
+        padding: 25px 20px;
+    }
+
+    .label-populer {
+        top: -12px;
+        padding: 6px 16px;
+        font-size: 0.85rem;
+    }
+
+    .header-kartu h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .harga-member {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .harga-member span {
+        font-size: 0.9rem;
+    }
+
+    .fitur-member {
+        margin-bottom: 20px;
+    }
+
+    .fitur-member li {
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    .tombol-pilih-member {
+        padding: 12px 20px;
+        font-size: 1rem;
     }
 }
 
@@ -448,6 +1422,156 @@
         padding: 10px 25px;
         font-size: 1rem;
     }
+
+    /* Author Page Landscape */
+    .header-author {
+        padding: 60px 0 30px;
+    }
+
+    .header-author h1 {
+        font-size: 2.2rem;
+    }
+
+    .bagian-author,
+    .bagian-hobi,
+    .bagian-keahlian,
+    .bagian-sosial {
+        padding: 40px 0;
+    }
+
+    .profil-author {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+
+    .foto-author img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .info-author h1 {
+        font-size: 1.6rem;
+    }
+
+    .bagian-quote {
+        padding: 40px 0;
+    }
+}
+
+/* iPad Specific */
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+    /* iPad Portrait */
+    .profil-author {
+        grid-template-columns: 300px 1fr;
+        gap: 50px;
+    }
+
+    .foto-author img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .info-author h1 {
+        font-size: 2.6rem;
+    }
+
+    .grid-hobi {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .grid-sosial {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* iPad Landscape */
+    .profil-author {
+        grid-template-columns: 280px 1fr;
+        gap: 40px;
+    }
+
+    .foto-author img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .info-author h1 {
+        font-size: 2.4rem;
+    }
+
+    .grid-hobi {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .grid-sosial {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+/* iPhone Specific */
+@media screen and (max-width: 414px) {
+    /* iPhone Pro Max, iPhone Plus */
+    .header-author h1 {
+        font-size: 2.1rem;
+    }
+
+    .info-author h1 {
+        font-size: 1.9rem;
+    }
+
+    .foto-author img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    /* iPhone X, iPhone 12/13/14 */
+    .header-author h1 {
+        font-size: 2rem;
+    }
+
+    .info-author h1 {
+        font-size: 1.8rem;
+    }
+
+    .foto-author img {
+        width: 160px;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    /* Small Android phones */
+    .header-author h1 {
+        font-size: 1.9rem;
+    }
+
+    .info-author h1 {
+        font-size: 1.7rem;
+    }
+
+    .foto-author img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .deskripsi {
+        font-size: 0.9rem;
+    }
+
+    .kartu-hobi {
+        padding: 18px 14px;
+    }
+
+    .ikon-hobi {
+        font-size: 2.5rem;
+    }
 }
 
 /* High DPI Displays */
@@ -459,7 +1583,9 @@
 
     .kartu-keunggulan,
     .kartu-olahraga,
-    .kartu-testimoni {
+    .kartu-testimoni,
+    .kartu-hobi,
+    .kartu-sosial {
         border: 0.5px solid rgba(64, 224, 208, 0.1);
     }
 }
@@ -473,6 +1599,14 @@
     }
     
     .gambar-hero img {
+        animation: none;
+    }
+
+    .dot-online {
+        animation: none;
+    }
+
+    .skill-bar::after {
         animation: none;
     }
 }
@@ -493,23 +1627,151 @@
     .hamburger-menu,
     .tombol-hero,
     .tombol-cta,
-    .footer-utama {
+    .footer-utama,
+    .status-online,
+    .bagian-quote {
         display: none;
     }
 
     .bagian-hero,
     .bagian-mengapa,
     .bagian-olahraga,
-    .bagian-testimoni {
+    .bagian-testimoni,
+    .header-author,
+    .bagian-author,
+    .bagian-hobi,
+    .bagian-keahlian,
+    .bagian-sosial {
         padding: 20px 0;
         background: white !important;
     }
 
     .kartu-keunggulan,
     .kartu-olahraga,
-    .kartu-testimoni {
+    .kartu-testimoni,
+    .kartu-hobi,
+    .kartu-sosial {
         box-shadow: none;
         border: 1px solid #ddd;
         break-inside: avoid;
+    }
+
+    .profil-author {
+        grid-template-columns: 200px 1fr;
+        gap: 30px;
+    }
+
+    .foto-author img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: no-preference) {
+    .kartu-hobi,
+    .kartu-sosial,
+    .skill-item {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .kartu-hobi:nth-child(even),
+    .kartu-sosial:nth-child(even) {
+        animation-delay: 0.2s;
+    }
+
+    .kartu-hobi:nth-child(3n),
+    .kartu-sosial:nth-child(3n) {
+        animation-delay: 0.4s;
+    }
+
+    .skill-item:nth-child(2n) {
+        animation-delay: 0.1s;
+    }
+
+    .skill-item:nth-child(3n) {
+        animation-delay: 0.2s;
+    }
+
+    .skill-item:nth-child(4n) {
+        animation-delay: 0.3s;
+    }
+}
+
+/* Focus States for Better Accessibility */
+.menu-navigasi li a:focus,
+.tombol-primer:focus,
+.tombol-sekunder:focus,
+.tombol-cta:focus,
+.tombol-booking:focus,
+.tombol-login:focus,
+.tombol-pilih-member:focus {
+    outline: 2px solid #40e0d0;
+    outline-offset: 2px;
+}
+
+/* Ensure text is always readable */
+@media screen and (max-width: 768px) {
+    .header-author h1,
+    .info-author h1,
+    .container-hobi h2,
+    .container-keahlian h2,
+    .container-sosial h2 {
+        color: #2c3e50 !important;
+        text-shadow: none;
+    }
+
+    .header-author p,
+    .deskripsi,
+    .container-hobi .subtitle,
+    .container-keahlian .subtitle,
+    .container-sosial .subtitle {
+        color: #64748b !important;
+    }
+
+    .nim {
+        color: #40e0d0 !important;
+        background: rgba(64, 224, 208, 0.1) !important;
+    }
+
+    .info-item h3 {
+        color: #2c3e50 !important;
+    }
+
+    .info-item p {
+        color: #64748b !important;
+    }
+
+    .kartu-hobi h3,
+    .kartu-sosial h3 {
+        color: #2c3e50 !important;
+    }
+
+    .kartu-hobi p {
+        color: #64748b !important;
+    }
+
+    .skill-name {
+        color: #2c3e50 !important;
+    }
+
+    .skill-percentage {
+        color: #40e0d0 !important;
+    }
+
+    .keahlian-kategori h3 {
+        color: #2c3e50 !important;
+    }
+
+    .info-sosial h3 {
+        color: #2c3e50 !important;
+    }
+
+    .info-sosial p {
+        color: #40e0d0 !important;
+    }
+
+    .info-sosial span {
+        color: #64748b !important;
     }
 }
